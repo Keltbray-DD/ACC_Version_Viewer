@@ -296,3 +296,9 @@ input[type="submit"]:active {
         padding: 2px;
         padding-right: 5px;
       }
+
+      @media (max-width: 730px) {
+        .branding{
+            display: none;
+        }
+      }
