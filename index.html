@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/getfileVersions.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="icon" href="./assets/media/Keltbray-logo_single.png" type="image/x-icon">
+
+    <title>Digital Delivery Hub - ACC Version Viewer</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-section">
+            <img alt="" id="headerlogo" class="logo_H" src="./assets/media/Keltbray-logo_single.png">
+            <h2>Keltbray <br>DD Hub</h2>
+        </div>
+        <div class="header-section">
+            <h1>ACC Version Viewer</h1>
+        </div>
+        <div class="header-section">
+            <h3></h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="fileURL">Paste file URL to view versions</label>
+                    <input type="text" id="fileURL" name="fileURL" placeholder="Paste URL">
+                    <div class="extracted-ids" id="extracted-ids">
+                        File Name: <span id="project-id"></span><br>
+                        Number of ACC versions: <span id="no-ACC-versions"></span><br><br>
+                    </div>
+
+
+                </div>
+
+
+                  <!-- Font Awesome CDN -->
+
+               
+
+            </form>
+        </div>
+
+
+        <div class="form-container" id="permissions-container">
+            <h3>File Versions</h3>
+            <ul id="results-container"></ul>
+        </div>
+    </main>
+    <script>
+
+    </script>
+</body>
+</html>
