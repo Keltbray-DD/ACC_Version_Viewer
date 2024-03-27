@@ -292,3 +292,7 @@ input[type="submit"]:active {
       .result ul li {
         margin-bottom: 5px;
       }
+      .result tr td{
+        padding: 2px;
+        padding-right: 5px;
+      }

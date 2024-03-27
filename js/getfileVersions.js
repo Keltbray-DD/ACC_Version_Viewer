@@ -144,13 +144,24 @@ function generateObjectHTML(object) {
     const version = object.revisionNumber
     const fileName = object.title
     const customAttributesHTML = generateCustomAttributesHTML(object.customAttributes);
+    const revision = getRevisionFromCustomAttributes(object.customAttributes);
     return `
       <div class="result">
-        <p>File Name: ${fileName} <br> ACC Version: ${version}</p>
+        <h3>File Name: ${fileName} <br> ACC Version: ${version} | Revision: ${revision}</h3>
+        <hr>
         ${customAttributesHTML}
         <button class="button" onclick="openInNewTab('${object.webView}')">View file version</button>
       </div>
     `;
+  }
+// Assuming 'object' is one of the items in your array
+function getRevisionFromCustomAttributes(customAttributes) {
+    for (const attribute of customAttributes) {
+      if (attribute.name === 'Revision') {
+        return attribute.value;
+      }
+    }
+    return null; // Return null if 'Revision' attribute is not found
   }
 
 // Function to open URN in a new tab
