@@ -47,7 +47,7 @@ h1, h3 {
 }
 .form-container {
     background-color: #FAFAFA;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* slight box shadow */
     width: 90%; /* Adjust the width of the container */
@@ -261,17 +261,15 @@ input[type="submit"]:active {
         transition: background-color 0.3s;
         margin: auto;
         margin-top: 10px;
+        width: 100%;
       }
       
       .button:hover {
         background-color: #45a049;
       }
 
-      #results-container {
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
+      ul {
+        padding-inline-start: 0;
       }
       
       .result {
@@ -283,7 +281,7 @@ input[type="submit"]:active {
       }
       
       .result p {
-        margin: 0;
+        margin: 10px 0;
       }
       
       .result ul {
